@@ -17,7 +17,3 @@ public extension NibLoadable {
         return NSBundle.mainBundle().loadNibNamed(Self.nibIdentifier, owner: nil, options: nil).first as! Self
     }
 }
-
-public protocol StoryboardLoadable {
-    static var storyboardIdentifier: String { get }
-}
